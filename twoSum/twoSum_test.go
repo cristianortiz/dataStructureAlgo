@@ -3,7 +3,7 @@ package twosum
 import "testing"
 
 // arrayEquals compare two slices looping and comparing element by element trougth them, returns true
-// if slices are equalsm and false if they did'nt
+// if slices are equals and false if they did'nt
 func arrayEquals(a, b []int) bool {
 	//returns false if the the two slice are not of the same size
 	if len(a) != len(b) {
@@ -17,7 +17,7 @@ func arrayEquals(a, b []int) bool {
 	return true
 }
 
-// Test solution to TwoSum problem using map[] aproach, using three predifined
+// Test solutions for TwoSum problem using map[][] aproach, using three predifined
 // test cases and their correct outputs
 func TestTwoSumWithMap(t *testing.T) {
 
