@@ -1,19 +1,16 @@
-package main
+package containsDuplicate
 
-import "fmt"
+// Given an integer array nums, return true if any value appears at least twice in the array,
+// and return false if every element is distinct.
+// Example:
 
-func containDuplicate() {
+// Input: nums = [1,2,3,1]
+// Output: true
 
-	//--- Problem Description--
-	// Given an array of integers nums and an integer target, return indices of the two numbers
-	// such that they add up to target. You may assume that each input would have exactly one solution,
-	// and you may not use the same element twice. You can return the answer in any order.
-	data := []int{2, 7, 11, 15}
-	res := containDuplicateWithMap(data)
-	fmt.Println(res)
-}
-
-func containDuplicateWithMap(nums []int) bool {
+// using the map[][] aproach to solve the problem usgin only one for loop
+// for trun the test for this specific function use the command
+// go test -run /Map
+func ContainDuplicateWithMap(nums []int) bool {
 	numMap := make(map[int]bool)
 
 	for _, num := range nums {
