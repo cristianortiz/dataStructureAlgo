@@ -21,14 +21,14 @@ func TestBinarySearch(t *testing.T) {
 	t.Run("Find the position of the last element", func(t *testing.T) {
 		result := binarySearch(arr, 13788)
 		if result != 12 {
-			t.Errorf("Se esperaba 12, pero se obtuvo %d", result)
+			t.Errorf("position 12 was expected, but %d returned instead", result)
 		}
 	})
 
 	t.Run("return -1 if the element does not belongs to the list", func(t *testing.T) {
 		result := binarySearch(arr, 2342)
 		if result != -1 {
-			t.Errorf("Se esperaba -1, pero se obtuvo %d", result)
+			t.Errorf("value -1 as expected,  but %d returned instead", result)
 		}
 	})
 
