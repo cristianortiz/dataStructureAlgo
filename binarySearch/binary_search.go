@@ -6,7 +6,7 @@ func binarySearch(arr []int, target int) int {
 	left := 0
 	right := len(arr) - 1
 
-	//main loop
+	//main loop untul bounds cross each other
 	for left <= right {
 		//Let's suppose I'm looking for the element = 8
 		//middle point position between bounds (first loop) = 0 +(8-0)/2 = 4
