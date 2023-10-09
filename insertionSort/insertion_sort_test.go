@@ -7,9 +7,9 @@ import (
 
 func TestInsertionSort(t *testing.T) {
 	t.Run("Order a list", func(t *testing.T) {
-		unsortedSlice := []int{64, 34, 25, 12, 22, 11, 90}
+		unsortedSlice := []int{4, 34, 25, 12, 22, 11, 90}
 		sorted := insertion_sort(unsortedSlice)
-		expected := []int{11, 12, 22, 25, 34, 64, 90}
+		expected := []int{4, 11, 12, 22, 25, 34, 90}
 		if !reflect.DeepEqual(sorted, expected) {
 			t.Errorf("%v was expected, but received %v", expected, sorted)
 		}
