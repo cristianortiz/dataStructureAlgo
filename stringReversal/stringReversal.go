@@ -28,7 +28,7 @@ func recursiveHelper(s []byte, left, right int) {
 	recursiveHelper(s, left+1, right-1)
 }
 
-// this version is iterative bus also works con []bytes as a parameter
+// this version is iterative but also works con []bytes as a parameter
 func ReverseStringIterative(s []byte) {
 	left, right := 0, len(s)-1
 
